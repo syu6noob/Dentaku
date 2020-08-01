@@ -1,0 +1,16 @@
+:root {
+  --width: 95%;
+  --selection: #eca72c;/*選択時の色*/
+  --bgColor: #31263e;/*背景色*/
+  --PRColor: #ee5622;/*PR文の色*/
+  --bodyColor: #ee5622;/*電卓本体色*/
+  --displayColor: #44355b;/*液晶画面色*/
+  --displayShadowColor: #31263e;/*液晶画面の影の色*/
+  --displayTextColor: #ffffff;/*液晶画面の文字色*/
+  --buttonAColor: #eca72c;/*ボタン色*/
+  --buttonAShadowColor: #db971d;/*ボタンの影の色*/
+  --buttonATextColor: #31263e;/*ボタンの文字色*/
+  --buttonBColor: #44355b;/*ボタン2の色*/
+  --buttonBShadowColor: #31263e;/*ボタン2の影の色*/
+  --buttonBTextColor: #ffffff;/*ボタン2の文字色*/
+}

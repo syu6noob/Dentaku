@@ -1,0 +1,218 @@
+* {
+  font-family: 'Jost', sans-serif;
+}
+::selection {
+  background: var(--selectionColor);
+}
+html {
+  width: 100%;
+  font-size: 1vmin;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+.bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--bgColor);
+}
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.pr {
+  display: inline;
+  color: var(--PRColor);
+  font-size: 2rem;
+  line-height: 4rem;
+}
+.pr > a {
+  color: var(--PRColor);
+  text-decoration: underline;
+}
+.main {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 60rem;
+  height: 80rem;
+  background: var(--bodyColor);
+  border-radius: 15px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.panel {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 17.5%;
+  background: var(--displayColor);
+  border-radius: 15px;
+  box-shadow: inset 0px -5px 0px 0px var(--displayShadowColor);
+}
+.status {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.result {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  color: var(--displayTextColor);
+  text-align: right;
+  font-size: 6rem;
+}
+.buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 90%;/*= 63rem*/
+  height: 70%;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+.buttons-no {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 43rem;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.buttons-sign {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 10rem;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/*一般的なボタン*/
+.button {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 10rem;
+  text-decoration: none;
+  font-size: 4rem;
+}
+
+/*＋ボタン向け*/
+.button-big {
+  height: 21.5rem;
+  line-height: 20rem;
+}
+
+/*数字・符号を追加するボタン*/
+.button-add {
+  background: var(--buttonAColor);
+  box-shadow: 0px 5px 0px 0px var(--buttonAShadowColor);
+  color: var(--buttonATextColor);
+}
+.button-add:hover {
+  top: 3px;
+  box-shadow: 0px 2px 0px 0px var(--buttonAShadowColor);
+}
+
+/*計算を実行するボタン*/
+.button-action {
+  background: var(--buttonAColor);
+  box-shadow: 0px 5px 0px 0px var(--buttonAShadowColor);
+  color: var(--buttonATextColor);
+}
+.button-action:hover {
+  top: 3px;
+  box-shadow: 0px 2px 0px 0px var(--buttonAShadowColor);
+}
+
+/*ACボタン用*/
+.button-cut {
+  background: var(--buttonBColor);
+  box-shadow: 0px 5px 0px 0px var(--buttonBShadowColor);
+  color: var(--buttonBTextColor);
+}
+.button-cut:hover {
+  top: 3px;
+  box-shadow: 0px 2px 0px 0px var(--buttonBShadowColor);
+}
+
+/*計算保持・不保持のトグルボタン用*/
+.button-toggleon {
+  top: 3px;
+  background: var(--buttonAColor);
+  box-shadow: 0px 2px 0px 0px var(--buttonAShadowColor);
+  color: var(--buttonATextColor);
+}
+.button-toggleoff {
+  top: 0px;
+  background: var(--buttonAColor);
+  box-shadow: 0px 5px 0px 0px var(--buttonAShadowColor);
+  color: var(--buttonATextColor);
+}
+
+/*設定ボタン用*/
+.button-config {
+  background: var(--buttonAColor);
+  box-shadow: 0px 5px 0px 0px var(--buttonAShadowColor);
+  color: var(--buttonATextColor);
+}
+.button-config:hover {
+  top: 3px;
+  box-shadow: 0px 2px 0px 0px var(--buttonAShadowColor);
+}
+
+/*コピーボタン用*/
+.button-copy {
+  background: var(--buttonAColor);
+  box-shadow: 0px 5px 0px 0px var(--buttonAShadowColor);
+  color: var(--buttonATextColor);
+}
+.button-copy:hover {
+  top: 3px;
+  box-shadow: 0px 2px 0px 0px var(--buttonAShadowColor);
+}
+
+@media (orientation: portrait) {
+  html {
+    font-size: 1.5vmin;
+  }
+}
